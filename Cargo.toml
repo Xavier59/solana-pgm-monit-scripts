@@ -1,0 +1,17 @@
+[package]
+name = "pgm-monit"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+error-chain = "0.12.4"
+mongodb = "2.2.0"
+serde = "1.0.140"
+solana-account-decoder = "1.11.4"
+solana-client = "1.11.4"
+solana-program = "1.11.4"
+solana-sdk = "1.11.4"
+tokio = "1.14.1"
