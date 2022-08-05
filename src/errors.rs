@@ -1,5 +1,6 @@
 use mongodb;
 use solana_client;
+use std::time;
 
 error_chain! {
     types {
@@ -16,6 +17,7 @@ error_chain! {
     foreign_links {
         ClientError(solana_client::client_error::ClientError);
         MongoError(mongodb::error::Error);
+        SystemTime(time::SystemTimeError);
     }
 
 }
